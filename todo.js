@@ -1,0 +1,22 @@
+// check off each item by click
+$("ul").on("click", "li", function(){
+  // "this" targets each individual li clicked, rather than all li
+  $(this).toggleClass("completed");
+});
+
+// delete todos
+$("ul").on("click", "span", function(event){
+  $(this).parent().fadeOut(400, function(){
+    $(this).remove();
+  });
+  event.stopPropagation();
+});
+
+$("input[type='text']").keypress(function(event){
+  // take item from text input only when user hits enter
+  if(event.which === 13){
+    var newTodo = $(this).val();
+    $(this).val("");
+    $("ul").append("<li><span>X</span> " + newTodo + "</li>");
+  }
+});
