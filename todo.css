@@ -1,13 +1,5 @@
-#container {
-  width: 360px;
-  margin: 100PX auto;
-  background: #f7f7f7;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-}
-
-.completed {
-  color: gray;
-  text-decoration: line-through;
+body {
+  font-family: Roboto;
 }
 
 h1 {
@@ -20,18 +12,10 @@ h1 {
   font-weight: normal;
 }
 
-.fa-plus {
-  float: right;
-}
-
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: Roboto;
 }
 
 li {
@@ -78,5 +62,22 @@ input:focus {
   outline: none;
 }
 
+#container {
+  width: 360px;
+  margin: 100PX auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.fa-plus {
+  float: right;
+}
+
 ::placeholder {
   color: #aaa;
+}
